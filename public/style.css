@@ -217,27 +217,27 @@ footer{
     .t-content p{
         position: fixed;
         top: 170px;
-        left: 75px;
-        font-size: 40px;
+        left: 70px;
+        font-size: 37px;
     }
     .t-content h1{
         position: fixed;
         top: 100px;
-        left: 70px;
-        font-size: 60px;
+        left: 65px;
+        font-size: 57px;
         width: 400px;
     }
     .t-content li{
         display: inline;
         overflow: hidden;
-        margin-left: 22px;
+        margin-left: 28px;
     }
     .t-content a{ 
         margin-top: 20px;
         text-decoration:none;
         float: right;
         margin-right: 30px;
-        font-size: 20px;
+        font-size: 15px;
         color: rgba(255, 255, 255, 0.753);
     }
     .about-content{
