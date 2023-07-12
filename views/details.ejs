@@ -7,6 +7,7 @@
 <div class="content">
     <p><%= blog.body %></p>
 </div>
+<button class="del" data-doc=" <%= blog._id %>">Delete</button>
 <a class="delete" data-doc=" <%= blog._id %>">
     <img src="/delete.svg" alt="delete icon" class="svg-img">
 </a>
@@ -14,7 +15,17 @@
 <%- include("./partial/footer.ejs") %>
 <script>
     const trash = document.querySelector('a.delete');
+    const trash1 = document.querySelector('button.del');
     trash.addEventListener('click',(e)=>{
+        const endpoint = '/blogs/'+(trash.dataset.doc).trim();
+        fetch(endpoint,{
+            method: 'DELETE'  
+        })
+        .then((response)=>response.json())
+        .then((data)=>window.location.href = data.redirect)
+        .catch(err=> console.log(err));
+    })
+    trash1.addEventListener('click',(e)=>{
         const endpoint = '/blogs/'+(trash.dataset.doc).trim();
         fetch(endpoint,{
             method: 'DELETE'  
