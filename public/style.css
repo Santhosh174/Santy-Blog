@@ -209,10 +209,10 @@ footer{
     .nav1 {
         height: 40vh;
         border-radius: 0;
-        background-size: 100;
+        background-size: 100%;
     }
     .nav1::after{
-        height: 75%;
+        height: 85%;
     }
     .t-content p{
         position: fixed;
@@ -285,9 +285,7 @@ footer{
         margin-left: 50px;
     }
     footer{
-       position: fixed;
-       bottom: 30px;
-       left:110px;
+       margin-left: 22px;
     }
     .content{
         margin-top: -60px;
