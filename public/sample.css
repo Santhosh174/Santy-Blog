@@ -231,6 +231,7 @@ footer{
         top: 90px;
         left: 70px;
         font-size: 57px;
+        width: 400px;
     }
     .t-content li{
         display: inline;
